@@ -5,3 +5,8 @@ scipy
 scikit-learn
 rank_bm25
 sentence_transformers
+hf_xet
+nltk
+langchain-openai
+langchain-core
+python-dotenv

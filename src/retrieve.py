@@ -1,6 +1,6 @@
 from retrieval.tfidf import TfidfRetrieval
 from retrieval.bm25 import BM25Retrieval
-from retrieval.dense import DenseRetrieval
+from retrieval.dense2_article import DenseArticleRetrieval
 
 question = "Что такое CRISPR?"
 
@@ -11,7 +11,7 @@ tfidf.fit()
 bm25 = BM25Retrieval()
 bm25.fit()
 
-dense = DenseRetrieval()
+dense = DenseArticleRetrieval()
 dense.fit()
 
 retrieval = dense

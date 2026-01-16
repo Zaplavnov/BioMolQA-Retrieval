@@ -36,7 +36,6 @@ class BM25Retrieval:
 
         # Инициализация BM25
         self.bm25 = BM25Okapi(self.tokenized_chunks)
-        print(f"BM25 initialized with {len(self.chunk_ids)} chunks")
 
     def query(self, question, top_k=TOP_K):
         # Токенизация вопроса
@@ -56,7 +55,8 @@ class BM25Retrieval:
 
         for i in top_idx:
             chunk_id = self.chunk_ids[i]
-            article_id = chunk_id.split("_")[0]
+            # Извлекаем article_id: все части chunk_id кроме последней (индекса чанка)
+            article_id = "_".join(chunk_id.split("_")[:-1])
             score = scores[i]
 
             if article_id not in article_scores or score > article_scores[article_id]:

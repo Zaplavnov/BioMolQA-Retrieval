@@ -1,0 +1,26 @@
+{
+  "tfidf": {
+    "Recall@1": 0.35,
+    "Recall@3": 0.51,
+    "Recall@5": 0.6,
+    "MRR": 0.44000000000000006,
+    "n_questions": 100,
+    "n_processed": 100
+  },
+  "bm25": {
+    "Recall@1": 0.08,
+    "Recall@3": 0.21,
+    "Recall@5": 0.39,
+    "MRR": 0.18099999999999994,
+    "n_questions": 100,
+    "n_processed": 100
+  },
+  "dense": {
+    "Recall@1": 0.31,
+    "Recall@3": 0.47,
+    "Recall@5": 0.53,
+    "MRR": 0.38850000000000007,
+    "n_questions": 100,
+    "n_processed": 100
+  }
+}
